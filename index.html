@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title>Opushka digital</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -10,55 +10,199 @@
 
 <header class="header">
 
-	<nav>
+	<nav class="header__nav">
 	
-		<a class="header--logo" href="/"><img src=""></a>
+		<a class="header__logo" href="index.html"><img src="../images/logo.png" alt="Разработка и дизайн сайтов и приложений любой сложности"></a>
 
-		<ul class="header--menu">
-			<li><a href="/">Главная</a></li>
-			<li><a href="/">Услуги</a></li>
-			<li><a href="/">Проекты</a></li>
-			<li><a href="/">О нас</a></li>
-			<li><a href="/">Контакты</a></li>
+		<ul class="header__menu">
+
+			<li><a class="header__link" href="index.html">Главная</a></li>
+			<li><a class="header__link" href="index.html">Услуги</a></li>
+			<li><a class="header__link" href="index.html">Проекты</a></li>
+			<li><a class="header__link" href="index.html">О нас</a></li>
+
 		</ul>
 
-		<a class="header--tel tel" href="tel:+79111760507">Номер</a>
+		<a class="header__tel tel" href="tel:+79111760507">Номер</a>
 	</nav>
 
-	<button class="header--feedback">Кнопка ответа на все вопросы</button>
+	<button class="header__feedback btn">Ответы на все вопросы</button>
 	
 </header>
 
 <main class="main-page">
 
-	<section class="main-page--abstract">
+	<!-- Text on pretty background -->
+	<section class="main-page__abstract">
+
+		<h1 class="abstract__h1">Разработка и дизайн сайтов и приложений любой сложности</h1>
+
+		<h2 class="visually-hidden">Веб-разработка, разработка приложений, веб-дизайн, дизайн приложений, бэкенд, UX, UI, маркетинг</h2>
+
+		<p class="abstract__slogan">26 часов в сутки и 9 дней в неделю мы разрабатываем интерфейсы для решения проблем бизнеса всех калибров</p>
+
+		<ul class="abstract__list">
+			<li class="abstract__principles"> Мы придерживаемся принципов открытости и твердых договоренностей </li>
+			<li class="abstract__principles"> Наша основная стратегия - win-win </li>
+			<li class="abstract__principles"> Команда молодых специалистов, владеющая полным стеком функциональности</li>
+		</ul>
+
+	</section>
+
+	<!-- Projects, services, about us etc -->
+	<section class="main-page__nav-block">
+
+		<h2 class="visually-hidden">Навигация по сайту</h2>
+
+		<ul class="nav-block__">
+			<li class="nav-block__">
+				<h3 class="nav-block__">Проекты</h3>
+				<p class="nav-block__">Мы создаем digital-продукты, ориентируясь на интересы бизнеса и его аудитории. Развитие и анализ эффективности — также наша ответственность.</p>
+			</li>
+			<li class="nav-block__">
+				<h3 class="nav-block__">Услуги</h3>
+				<p class="nav-block__">Мы предлагаем комплексные решения. От анализа и ux-стратегий — до разработки интерактивных решений любого уровня сложности.</p>
+			</li>
+			<li class="nav-block__">
+				<h3 class="nav-block__">О нас</h3>
+				<p class="nav-block__">Главная ценность — наши клиенты. Мы №1 в рейтинге разработчиков для промышленности и завоевали более 50 наград в ведущих конкурсах страны.</p>
+			</li>
+		</ul>
 		
 	</section>
 
-	<section class="main-page--navigation-block">
+	<!-- Quiz block with calculating of price -->
+	<section class="main-page__quiz">
+
+		<h2 class="quiz__h2">Ответьте на 5 вопросов и узнайте стоимость сайта</h2>
+
+		<h3 class="quiz__h3">1. Подскажите, пожалуйста, какой сайт Вам нужен?</h3>
+
+		<ul class="quiz__list">
+			<li class="quiz__option">
+				Одностраничный сайт - лэндинг
+			</li>
+			<li class="quiz__option">
+				Небольшой сайт - до 15 страниц
+			</li>
+			<li class="quiz__option">
+				Крупный сайт - внушительные объемы
+			</li>
+		</ul>
+
+		<button class="quiz__nav">Назад</button>
+		<button class="quiz__nav">Далее</button>
 		
 	</section>
 
-	<section class="main-page--quiz">
+	<!-- Our advantages like full stack, soft skills, energy & etc -->
+	<section class="main-page__advantages">
+
+		<h2 class="visually-hidden">Opushka digital обладает полным стеком функциональности для решения IT задач вашего бизнеса</h2>
+
+		<ul class="advantages__list">
+			<li class="advantages__point">
+				<h3 class="advantages__h3">FULL STACK</h3>
+				<p class="advantages__description">
+					В нашей команде есть специалисты из всех отраслей IT: разработчики, дизайнеры, маркетологи, аналитики, тестировщик (правда всего один)
+				</p>
+			</li>
+			<li class="advantages__point">
+				<h3 class="advantages__h3">SOFT SKILLS</h3>
+				<p class="advantages__description">
+					Заказ приложения/сайта - это не только про нарисовать дизайн и написать код. Это про то, как он будет себя преподносить, через какие точки будет продавать, как эффективно он будет решать проблемы широкого спектра пользователей
+				</p>
+			</li>
+			<li class="advantages__point">
+				<h3 class="advantages__h3">PRODUCT</h3>
+				<p class="advantages__description">
+					Мы не делаем приложения и сайты! Мы предлагаем упакованный продукт с аналитикой, вариативностью, установкой и полноценной передачей в эксплуатацию. Это важно!
+				</p>
+			</li>
+		</ul>
 		
 	</section>
 
-	<section class="main-page--advantages">
-		
+	<!-- How we work: from conversation till project's end -->
+	<section class="main-page__how-work">
+
+		<h2 class="how-work__h2">Как мы работаем? Системно</h2>
+
+		<input class="visually-hidden" type="radio" id="level-1" name="toggle" checked>
+	    <input class="visually-hidden" type="radio" id="level-2" name="toggle">
+	    <input class="visually-hidden" type="radio" id="level-3" name="toggle">
+	    <input class="visually-hidden" type="radio" id="level-4" name="toggle">
+	    <input class="visually-hidden" type="radio" id="level-5" name="toggle">
+	    <br>
+	    <label for="level-1">1</label>
+        <label for="level-2">2</label>
+        <label for="level-3">3</label>
+        <label for="level-4">4</label>
+        <label for="level-5">5</label>
+
+        <!-- Жду дезигн от Алины -->
 	</section>
 
-	<section class="main-page--portfolio">
-		
-	</section>
+	<!-- Form to call -->
+	<section class="main-page__form">
 
-	<section class="main-page--form">
+		<h2 class="visually-hidden">Заполните форму и мы свяжемся с Вами, чтобы помочь</h2>
+
+		<form class="action-form">
+			<label class="form__label" for="name" >Ваше имя</label>
+			<input type="text" name="name" id="name">
+
+			<label class="form__label" for="phone" title="На всякий случай!" >...и телефон</label>
+			<input type="tel" name="phone" placeholder="+7 (999) 99 99 999" id="phone">
+
+			<label class="form__label" for="email" >На какую почту нам ответить?</label>
+			<input type="email" name="email" id="email">
+
+			<label class="form__label" for="message" >Нам нужно что-то знать еще?</label>
+			<textarea placeholder="Напишите все, о чем думаете" maxlength="400" rows="1" id="message"></textarea>
+
+			<label class="form__label" for="agreement" ><a href="#">Согласие на обработку персональных данных</a></label>
+			<input type="checkbox" name="agreement" id="agreement" required>
+
+			<label class="form__label" title="Например, вариант дизайна, который Вам сильно нравится" >Прикрепить файл</label>
+			<input type="file" name="file" id="file">
+
+			<input type="submit" name="submit" value="Отправить">
+		</form>
 		
 	</section>
 
 </main>
 
 <footer class="footer">
+
+	<div class="footer__first-line">
+
+		<ul class="footer__nav">
+			<li class="footer__link">Проекты</li>
+			<li class="footer__link">Услуги</li>
+			<li class="footer__link">Студия</li>						
+		</ul>
+
+		<ul class="footer__social">
+			<li class="social">What's up</li>
+			<li class="social">Facebook</li>
+			<li class="social">Instagram</li>
+			<li class="social">Linked In</li>
+		</ul>
+		
+	</div>
+
+	<div class="footer__second-line">
 	
+		<a class="footer__phone" href="tel:+79992222222">+7 999 222-22-22</a>
+
+		<a class="footer__email" href="mailto:webstudia@gmail.com">webstudia@gmail.com</a>
+
+		<p class="footer__city">Санкт-Петребург</p>
+
+	</div>
+
 </footer>
 
 </body>
