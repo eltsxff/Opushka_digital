@@ -251,6 +251,19 @@ li {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.quiz_option_active {
+	width: 310px;
+	height: 205px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+
+	border: 1px solid rgba(0, 0, 128, 0.6);	
+}
+
 .quiz__heading {
 	margin:32px; 
 }

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="../Opushka_digital/js/scripts.js"></script>
 </head>
 
 <body>
@@ -108,12 +109,12 @@
 
 	<div class="block-container">
 
-		<h2 class="quiz__h2">Ответьте на 5 вопросов и узнайте стоимость сайта</h2>
+		<h2 class="quiz__h2">Ответьте на 5 вопросов и узнайте приблизительную стоимость сайта</h2>
 
-		<h3 class="quiz__h3">1. Подскажите, пожалуйста, какой сайт Вам нужен?</h3>
+		<h3 class="quiz__h3" id="question">1. Какой тип сайта Вам нужен?</h3>
 
-		<ul class="quiz__list">
-			<li class="quiz__option">
+		<ul class="quiz__list" id="question_body">
+			<li class="quiz__option" onclick="choosePic(this, 0)">
 				<p class="quiz__heading">Одностраничный - лэндинг с несколькими разделами</p>
 				
 				<svg width="95" height="64" viewBox="0 0 95 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +122,7 @@
 				</svg>
 			</li>
 
-			<li class="quiz__option">
+			<li class="quiz__option" onclick="choosePic(this, 1)">
 				<p class="quiz__heading">Небольшой сайт - несколько разделов до 15 страниц</p>
 				
 				<svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +130,7 @@
 				</svg>
 			</li>
 
-			<li class="quiz__option">
+			<li class="quiz__option" onclick="choosePic(this, 2)">
 				<p class="quiz__heading">Крупный сайт - внушительные объемы</p>
 				
 				<svg width="110" height="85" viewBox="0 0 110 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,8 +143,8 @@
 		</ul>
 
 		<div class="quiz__nav">
-			<button class="nav__btn">Назад</button>
-			<button class="nav__btn">Далее</button>
+			<button class="nav__btn" id="back" onclick="prev(this)">Назад</button>
+			<button class="nav__btn" id="next" onclick="next(this)">Далее</button>
 		</div>
 
 	</div>
@@ -272,7 +273,7 @@
 			<p><label class="form__label" for="email" >На какую почту нам ответить?</label><br>
 			<input type="email" name="email" id="email" placeholder="Точный адрес, пожалуйста"></p>
 
-			<p><label class="form__label" for="message" >Нам нужно что-то знать еще?</label><br>
+			<p><label class="form__label" for="message" >Нам нужно знать что-то еще?</label><br>
 			<textarea placeholder="Напишите все, о чем думаете" maxlength="400" rows="1" id="message"></textarea></p>
 			
 			<div class="agreement">
